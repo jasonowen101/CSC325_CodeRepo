@@ -13,5 +13,12 @@ public class Main {
         // Call methods for the Cat instance
         myCat.makeSound();
         myCat.move();
+
+        // Create a Chicken instance
+        Chicken myChicken = new Chicken("Harvey");
+
+        // Call methods for the Dog instance
+        myChicken.makeSound();
+        myChicken.move();
     }
 }
