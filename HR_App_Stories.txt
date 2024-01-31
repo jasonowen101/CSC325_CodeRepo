@@ -1,0 +1,24 @@
+1. Database - 7 
+	a. Member Demographic Data
+	b. Employee Evaluation Notes
+	c. Employee Skills and Development
+		1. Employee Talents, Gifts, Hard Skills, and Soft Skills
+	d. Access and Edit Database(CRUD)
+
+2. UI Development - 5 
+	a. Straight forward GUI thats's easy to use and learn - ?
+	b. Visually appealing GUI that anyone can use - ?
+	c. Dashboard for each member to display all the employee's data including photo of employee - ?
+
+3. Security - 3
+	a. All users must have proper email, Username and Password - ?
+	b. Tiers of users and special Permissions/Priviledges for higher tier users
+		1. HR executive(Full Access)
+		2. Manager/Supervisor
+		3. Sales Rep
+		4. Employee
+    5. IT Dept.(Full Access)
+
+4.  Misc. Requirements - 3 
+	a. Application Icon for desktop - ?
+	b. Software must look sleek, perform well, and use Murray State Univeristy Colors
