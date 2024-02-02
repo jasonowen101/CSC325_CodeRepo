@@ -1,0 +1,21 @@
+Isabella Floyd 2/2/24
+
+Method public static void main(String[] args)
+
+    DECLARE an int variable to hold the number of guesses, named numOfGuesses
+
+    COMPUTE a random number between 0 and 4 that will be the starting location cell position
+
+    WHILE the Startup is still alive GET user input from the command line
+
+    CREATE a SimpleStartup object passing an array (with 3 numbers) starting with the random number in position 0 
+      and  and ending with the random number +2 in position 2 ex [2,3,4] if 2 is the random number
+        you will want to pass the array to the setLocationCells() method
+    
+    PRINT the method checkYourself() passing the user's input and increment numOfGuessed
+
+    CHECK for accuracy of the ouput to ensure the user's input is indeed a hit, kill, or miss
+
+    REPEAT the while, print, and check steps to ensure that all endcases of checkYourself() work 
+        ex. you get a hit, a miss, and a kill all accurately
+
