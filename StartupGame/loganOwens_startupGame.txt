@@ -1,0 +1,23 @@
+Logan Owens 2/2/2024
+Template to start your prep-code for the main method. 
+Hint, this is where looking in the book at the prep-code and the flow of the game comes in. 
+
+
+Method public static void main(String[] args)
+
+    DECLARE an int variable to tholf the number of guesses, named numOfGuesses
+        SET a SimpleStartup instance
+
+    COMPUTE a random number between 0 and 4 that will be the starting location cell position
+        MAKE an array with 3 random numbers of ints within that range
+        RUN setLocationCells method
+        DECLARE boolean alive for the state of the game
+
+    WHILE the Startup is still alive 
+        GET user input from the command line
+        CHECK the guess to see if it hit
+        RUN checkYourself method
+        INCREMENT numOfGuesses variable
+        CHECK to see if the target is killed
+        IF killed SET alive to false
+    RETURN the amount of guesses it took to win the game or Result 
