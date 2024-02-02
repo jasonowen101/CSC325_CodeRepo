@@ -1,0 +1,33 @@
+Ezana Fekadu
+
+
+Method public static void main(String[] args)
+
+    DECLARE an int variable to hold the number of guesses, named numOfGuesses
+
+    COMPUTE a random number between 0 and 4 that will be the starting location cell position
+
+    WHILE the Startup is still alive GET user input from the command line
+
+        CREATE Startup object
+
+        Assign location for the Startup
+
+        GET user input (user guesses for the Startup location)
+
+        COMPARE the user's guess to the Startup location
+
+            If a match
+            
+                print Hint
+                increase numOfGuesses
+
+            Else
+
+                print miss
+                increase numOfGuesses
+
+            If numOfGuesses == 3
+                print kill
+                
+            break
