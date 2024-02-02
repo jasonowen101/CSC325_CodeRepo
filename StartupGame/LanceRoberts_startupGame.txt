@@ -1,0 +1,28 @@
+lance Roberts
+Template to start your prep-code for the main method. 
+Hint, this is where looking in the book at the prep-code and the flow of the game comes in. 
+
+
+Method public static void main(String[] args)
+
+    DECLARE an int variable to hold the number of guesses, named numOfGuesses
+    DECLARE an int variable for number of hits, named numHits and initialize it to 0. 
+
+    COMPUTE a random number between 0 and 4 that will be the starting location cell position
+
+    WHILE the Startup is still alive GET user input from the command line
+
+        COMPARE the user input to the cells locations
+
+            IF user input is equal to a cell locations randomly chosen 
+                THEN print "HIT"
+                Increment numHits
+
+            ELSE print "Miss"        
+
+            IF numHits is equal to 3 
+                THEN print "kill"
+
+        
+
+    OUTPUT wIn or lose
