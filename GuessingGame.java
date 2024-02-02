@@ -11,6 +11,7 @@ public class GuessingGame {
         int guessp1 = 0;
         int guessp2 = 0;
         int guessp3 = 0;
+        int guessAmount = 0;
 
         boolean p1isRight = false;
         boolean p2isRight = false;
@@ -19,7 +20,7 @@ public class GuessingGame {
         int targetNumber = (int) (Math.random() * 10);
         System.out.println("I'm thinking of a number between 0 and 9...");
 
-        while (true) {
+        while (true && guessAmount > 3) {
             System.out.println("Number to guess is " + targetNumber);
 
             p1.guess();
@@ -30,10 +31,11 @@ public class GuessingGame {
             System.out.println("Player one guessed " + guessp1);
             guessp2 = p2.number;
             System.out.println("Player two guessed " + guessp2);
+            guessp3 = p3.number;
+            System.out.println("Player three guessed " + guessp3);
             
-            //BUG FIX
-                //guessp3 = p3.number;
-            guessp3 = targetNumber;
+            
+            
             
             System.out.println("Player three guessed " + guessp3);
 
@@ -58,6 +60,6 @@ public class GuessingGame {
                 //We must keep going because nobody got it right!
                 System.out.println("Players will have to try again.");
             }  //end if/else
-        }  //end loop
+        }  System.out.println("You have failed to guess my number. Try Again.")
     }  // end method
 }   
