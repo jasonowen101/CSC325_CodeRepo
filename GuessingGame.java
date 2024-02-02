@@ -30,11 +30,11 @@ public class GuessingGame {
             System.out.println("Player one guessed " + guessp1);
             guessp2 = p2.number;
             System.out.println("Player two guessed " + guessp2);
-            
-            //BUG FIX
-                //guessp3 = p3.number;
+
+            // BUG FIX
+            // guessp3 = p3.number;
             guessp3 = targetNumber;
-            
+
             System.out.println("Player three guessed " + guessp3);
 
             if (guessp1 == targetNumber) {
@@ -55,9 +55,9 @@ public class GuessingGame {
                 System.out.println("Game is over.");
                 break; // game over, so break the loop
             } else {
-                //We must keep going because nobody got it right!
+                // We must keep going because nobody got it right!
                 System.out.println("Players will have to try again.");
-            }  //end if/else
-        }  //end loop
-    }  // end method
-}   
+            } // end if/else
+        } // end loop
+    } // end method
+}
