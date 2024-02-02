@@ -1,7 +1,6 @@
-Ethan James
+Jason Owen
 Template to start your prep-code for the main method. 
 Hint, this is where looking in the book at the prep-code and the flow of the game comes in. 
-
 
 
 Method public static void main(String[] args)
