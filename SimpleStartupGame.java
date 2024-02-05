@@ -14,7 +14,7 @@ public class SimpleStartupGame {
             int guess = helper.getUserInput("enter a number");
             String result = theStartup.checkYourself(guess);
             numOfGuesses++;
-            if (result.equals("kil")) {
+            if (result.equals("kill")) {
                 isAlive = false;
                 System.out.println("You took " + numOfGuesses + " guesses");
             } // close if
