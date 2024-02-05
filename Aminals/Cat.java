@@ -1,3 +1,4 @@
+package Aminals;
 public class Cat extends Animal {
     // Constructor for Cat class, calling the superclass constructor
     public Cat(String name) {
