@@ -1,3 +1,5 @@
+package PastStudentUploads;
+
 public class CSC345Notes {
     public static void main(String[] args) {
 
