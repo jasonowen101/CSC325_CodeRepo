@@ -1,7 +1,7 @@
 package LoopingExamples;
 public class EthanStandridge_LoopExample {
-    private static int whileLoop(int[] array) {
     // JTO Creating a whileLoop method to break at index 3
+    private static int whileLoop(int[] array) {
         int i=0;
         while (i<=3) {
             array[i]++;
