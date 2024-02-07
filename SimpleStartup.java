@@ -1,16 +1,15 @@
-package StartupGame;
-
 public class SimpleStartup {
     private int[] locationCells;
     private int numOfHits = 0;
 
+    //sets the location to passed in array
     public void setLocationCells(int[] locs) {
         locationCells = locs;
     }
 
+    //check if user input is hit or miss remove number if hit
     public String checkYourself(int guess) {
         String result = "miss";
-        // for all cells in location cells
         for (int cell : locationCells) {
             if (guess == cell) {
                 result = "hit";

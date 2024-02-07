@@ -1,0 +1,18 @@
+Jason Owen
+Template to start your prep-code for the main method. 
+Hint, this is where looking in the book at the prep-code and the flow of the game comes in. 
+
+
+Method public static void main(String[] args)
+
+    DECLARE an int variable to hold the number of guesses, named numOfGuesses
+
+    COMPUTE a random number between 0 and 4 that will be the starting location cell position
+
+    WHILE the Startup is still alive GET user input from the command line
+
+    PASS the user's input into the "checkYourself" method, which determines if a hit has been made and counts how many hits have occurred.
+
+    REPEAT the last two lines until the method returns "kill."
+    
+    DISPLAY a victory message when this occurs and give the option to end the game or restart.

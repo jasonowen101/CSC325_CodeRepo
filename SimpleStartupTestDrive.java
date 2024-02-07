@@ -1,4 +1,3 @@
-package StartupGame;
 public class SimpleStartupTestDrive {
     public static void main(String[] args) {
         SimpleStartup dot = new SimpleStartup();
