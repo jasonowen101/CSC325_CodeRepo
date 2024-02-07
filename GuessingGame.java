@@ -33,7 +33,8 @@ public class GuessingGame {
             
             //BUG FIX
                 //guessp3 = p3.number;
-            guessp3 = p3.number;
+            guessp3 = targetNumber;
+            
             System.out.println("Player three guessed " + guessp3);
 
             if (guessp1 == targetNumber) {
