@@ -1,4 +1,4 @@
-package Aminals;
+package Animals;
 public abstract class Animal {
     // Field to store the name of the animal
     protected String name;

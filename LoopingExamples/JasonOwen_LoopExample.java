@@ -12,7 +12,6 @@ public class JasonOwen_LoopExample {
             if (index == 3) {
                 break;
             }
-
             // Perform any desired operation inside the loop
             // For this example, we'll just increment the count
             count++;
