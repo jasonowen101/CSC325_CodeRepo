@@ -1,0 +1,73 @@
+// // Steps to add Javax.swing in VS Code
+
+// To add Java Swing library support to a Java project in Visual Studio Code (VS Code), you'll need to follow these steps:
+
+// **Step 1: Install Visual Studio Code**
+
+// If you haven't already, download and install Visual Studio Code from the official website: https://code.visualstudio.com/
+
+// **Step 2: Install Java Extension Pack**
+
+// In VS Code, you can install extensions to enhance your development environment. For Java development, you should install the "Java Extension Pack." Here's how:
+
+// 1. Open VS Code.
+// 2. Go to the Extensions view by clicking on the square icon on the left sidebar or pressing `Ctrl+Shift+X` (Windows/Linux) or `Cmd+Shift+X` (macOS).
+// 3. Search for "Java Extension Pack" and install it.
+
+// **Step 3: Create a New Java Project**
+
+// Now that you have the Java Extension Pack installed, you can create a new Java project or open an existing one. Here's how to create a new Java project:
+
+// 1. In VS Code, open the Command Palette by pressing `Ctrl+Shift+P` (Windows/Linux) or `Cmd+Shift+P` (macOS).
+// 2. Type "Java: Create Java Project" and select it from the dropdown.
+// 3. Follow the prompts to create a new Java project. Choose a location and specify the project name.
+
+// **Step 4: Create a New Java Class**
+
+// Once you have a Java project, create a new Java class where you'll write your Swing code:
+
+// 1. Right-click on your project folder in the VS Code Explorer.
+// 2. Select "New File" and give it a `.java` extension (e.g., `MySwingApp.java`).
+
+// **Step 5: Write Java Swing Code**
+
+// Now, you can write Java Swing code in your Java class file. For example:
+
+// ```java
+// import javax.swing.*;
+
+// public class MySwingApp {
+//     public static void main(String[] args) {
+//         JFrame frame = new JFrame("Hello Swing");
+//         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//         frame.setSize(400, 300);
+//         JButton button = new JButton("Click Me");
+//         frame.add(button);
+//         frame.setVisible(true);
+//     }
+// }
+// ```
+
+// **Step 6: Compile and Run**
+
+// To compile and run your Java Swing application in VS Code, follow these steps:
+
+// 1. Open a terminal in VS Code by going to "Terminal" > "New Terminal."
+
+// 2. Navigate to the directory where your Java class is located.
+
+// 3. Compile the Java file using the `javac` command. For example:
+
+//    ```
+//    javac MySwingApp.java
+//    ```
+
+// 4. Run the compiled Java program using the `java` command:
+
+//    ```
+//    java MySwingApp
+//    ```
+
+// Your Swing application will launch and display the Swing window.
+
+// By following these steps, you can create, write, and run Java Swing applications in Visual Studio Code, taking advantage of the Java Extension Pack for a smoother Java development experience.
