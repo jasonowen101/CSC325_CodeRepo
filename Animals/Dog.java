@@ -1,4 +1,4 @@
-package Aminals;
+package Animals;
 public class Dog extends Animal {
     // Constructor for Dog class, calling the superclass constructor
     public Dog(String name) {

@@ -1,4 +1,4 @@
-package Aminals;
+package Animals;
 public class Main {
     public static void main(String[] args) {
         // Create a Dog instance

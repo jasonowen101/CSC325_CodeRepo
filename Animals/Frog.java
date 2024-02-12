@@ -1,4 +1,4 @@
-package Aminals;
+package Animals;
 public class Frog {
 
 }
