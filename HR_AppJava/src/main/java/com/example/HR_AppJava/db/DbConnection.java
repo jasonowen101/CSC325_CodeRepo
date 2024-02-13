@@ -2,6 +2,7 @@ package com.example.HR_AppJava.db;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class DbConnection {
@@ -35,6 +36,28 @@ public class DbConnection {
             }
         } catch (SQLException e) {
             System.err.println("Error closing SQLite connection: " + e.getMessage());
+        }
+    }
+
+    // Function to insert a user into the 'users' table
+    public static void insertUser(String username, String password, String email) {
+        try {
+            String query = "INSERT INTO users (username, password, email) VALUES (?, ?, ?)";
+            try (PreparedStatement preparedStatement = connection.prepareStatement(query)) {
+                preparedStatement.setString(1, username);
+                preparedStatement.setString(2, password);
+                preparedStatement.setString(3, email);
+
+                int rowsAffected = preparedStatement.executeUpdate();
+
+                if (rowsAffected > 0) {
+                    System.out.println("User inserted successfully");
+                } else {
+                    System.out.println("Failed to insert user");
+                }
+            }
+        } catch (SQLException e) {
+            System.err.println("Error inserting user: " + e.getMessage());
         }
     }
 }
