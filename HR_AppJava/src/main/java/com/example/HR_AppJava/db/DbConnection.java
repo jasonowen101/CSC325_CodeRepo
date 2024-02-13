@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 public class DbConnection {
     // JDBC URL of SQLite database
-    private static final String JDBC_URL = "jdbc:sqlite:/HR_AppJava/src/main/java/com/example/HR_AppJava/db/hr_database.db";
+    private static final String JDBC_URL = "jdbc:sqlite:/HR_AppJava/src/main/java/com/example/HR_AppJava/db/HR_Dbase.db";
 
     // JDBC variable for opening, closing, and managing connection
     private static Connection connection;
