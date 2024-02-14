@@ -40,13 +40,13 @@ public class DbConnection {
     }
 
     // Function to insert a user into the 'users' table
-    public static void insertUser(String username, String password, String email) {
+    public static void insertUser(String username, String password, String userId) {
         try {
-            String query = "INSERT INTO users (username, password, email) VALUES (?, ?, ?)";
+            String query = "INSERT INTO users (username, password, userId) VALUES (?, ?, ?)";
             try (PreparedStatement preparedStatement = connection.prepareStatement(query)) {
                 preparedStatement.setString(1, username);
                 preparedStatement.setString(2, password);
-                preparedStatement.setString(3, email);
+                preparedStatement.setString(3, userId);
 
                 int rowsAffected = preparedStatement.executeUpdate();
 

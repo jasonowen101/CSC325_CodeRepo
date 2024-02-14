@@ -2,10 +2,11 @@ package com.example.HR_AppJava.models;
 
 import com.example.HR_AppJava.db.DbConnection;
 
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-
+import java.sql.Connection;
+// import java.sql.PreparedStatement;
+// import java.sql.ResultSet;
+// import java.sql.SQLException;
+import java.util.UUID;
 public class Users {
     // Variables
     private String userId;
@@ -42,7 +43,7 @@ public class Users {
     // Method to generate a unique user ID (you may need to implement this based on your requirements)
     private String generateUserId() {
         // Implementation of generating user ID (e.g., using UUID)
-        // ...
+        String generatedUserId = UUID.randomUUID().toString();
         return generatedUserId;
     }
 
@@ -53,11 +54,11 @@ public class Users {
             Connection connection = DbConnection.getConnection();
 
             // Insert the user into the 'users' table
-            DbConnection.insertUser(username, password, getEmail());
+            DbConnection.insertUser(username, password, userId);
 
             // Close the database connection (optional, as the connection is static and may be reused)
             DbConnection.closeConnection();
-        } catch (SQLException e) {
+        } catch (Exception e) {
             System.err.println("Error creating user: " + e.getMessage());
         }
     }
