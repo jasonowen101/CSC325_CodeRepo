@@ -1,0 +1,97 @@
+// Define the Pet interface with common pet actions
+interface Pet {
+    void run();
+    void play();
+    void fetch();
+}
+
+// Define the Animal interface with animal-specific actions
+interface Animal {
+    void eat();
+    void sleep();
+    void potty();
+}
+
+// Implement the Dog class that IS-A Pet and IS-A Animal
+class Dog implements Pet, Animal {
+    @Override
+    public void run() {
+        System.out.println("Dog is running.");
+    }
+
+    @Override
+    public void play() {
+        System.out.println("Dog is playing.");
+    }
+
+    @Override
+    public void fetch() {
+        System.out.println("Dog is fetching.");
+    }
+
+    @Override
+    public void eat() {
+        System.out.println("Dog is eating.");
+    }
+
+    @Override
+    public void sleep() {
+        System.out.println("Dog is sleeping.");
+    }
+
+    @Override
+    public void potty() {
+        System.out.println("Dog is doing its business.");
+    }
+}
+
+// Implement the RoboDog class that IS-A Pet but IS-NOT-A Animal
+class RoboDog implements Pet {
+    public void connectBluetooth() {
+        System.out.println("RoboDog is connecting to Bluetooth.");
+    }
+
+    public void orderDogFood() {
+        System.out.println("RoboDog is ordering dog food.");
+    }
+
+    @Override
+    public void run() {
+        System.out.println("RoboDog is running.");
+    }
+
+    @Override
+    public void play() {
+        System.out.println("RoboDog is playing.");
+    }
+
+    @Override
+    public void fetch() {
+        System.out.println("RoboDog is fetching.");
+    }
+}
+
+// Example usage
+public class PetExample {
+    public static void main(String[] args) {
+        Dog myDog = new Dog();
+        RoboDog myRoboDog = new RoboDog();
+
+        // Dog actions
+        myDog.run();
+        myDog.play();
+        myDog.fetch();
+        myDog.eat();
+        myDog.sleep();
+        myDog.potty();
+
+        System.out.println("--------------------");
+
+        // RoboDog actions
+        myRoboDog.run();
+        myRoboDog.play();
+        myRoboDog.fetch();
+        myRoboDog.connectBluetooth();
+        myRoboDog.orderDogFood();
+    }
+}
