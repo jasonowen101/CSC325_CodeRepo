@@ -1,24 +1,9 @@
-// Employee class implementing interfaces
-public class Employee implements Workable, Reportable, Managable {
+// Employee class extending EmployeeBase and implementing Managable
+public class Employee extends EmployeeBase implements Managable {
 
     @Override
     public void doWork() {
         System.out.println("Employee is working on assigned tasks.");
-    }
-
-    @Override
-    public void takeBreak() {
-        System.out.println("Employee is taking a break.");
-    }
-
-    @Override
-    public void generateReport() {
-        System.out.println("Employee is generating a report.");
-    }
-
-    @Override
-    public void analyzeData() {
-        System.out.println("Employee is analyzing data.");
     }
 
     @Override

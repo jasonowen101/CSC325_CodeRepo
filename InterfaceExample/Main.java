@@ -3,6 +3,7 @@ public class Main {
     public static void main(String[] args) {
         Employee employee = new Employee();
         Manager manager = new Manager();
+        Intern intern = new Intern();
 
         // Employee methods
         employee.doWork();
@@ -23,5 +24,11 @@ public class Main {
         manager.generateReport();
         manager.analyzeData();
         manager.provideGuidance("Ensure effective collaboration and communication among team members.");
+
+        System.out.println();
+
+        // Intern methods
+        intern.doWork();
+        intern.takeBreak();
     }
 }
