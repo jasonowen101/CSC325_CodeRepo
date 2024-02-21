@@ -1,0 +1,76 @@
+// This is example code for an Abstract person class that is extended by employee and a class for 
+// User that extends the employee class that is not abstract but is a concrete subclass of the 
+// abstract Person class.
+
+
+// Abstract class Person
+public abstract class Person {
+    protected String name;
+    protected int age;
+
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public void displayInfo() {
+        System.out.println("Name: " + name + ", Age: " + age);
+    }
+}
+
+// Subclass Employee extending Person
+public class Employee extends Person {
+    private String employeeId;
+    private double salary;
+
+    public Employee(String name, int age, String employeeId, double salary) {
+        super(name, age);
+        this.employeeId = employeeId;
+        this.salary = salary;
+    }
+
+    @Override
+    public void displayInfo() {
+        super.displayInfo();
+        System.out.println("Employee ID: " + employeeId + ", Salary: " + salary);
+    }
+
+    public void work() {
+        System.out.println(name + " is working.");
+    }
+}
+
+// Subclass User extending Employee
+public class User extends Employee {
+    private String username;
+    private String email;
+
+    public User(String name, int age, String employeeId, double salary, String username, String email) {
+        super(name, age, employeeId, salary);
+        this.username = username;
+        this.email = email;
+    }
+
+    @Override
+    public void displayInfo() {
+        super.displayInfo();
+        System.out.println("Username: " + username + ", Email: " + email);
+    }
+
+    public void browseInternet() {
+        System.out.println(name + " is browsing the internet.");
+    }
+
+    public static void main(String[] args) {
+        Person person = new Person("John Doe", 30);
+        person.displayInfo();
+
+        Employee employee = new Employee("Jane Smith", 25, "EMP123", 50000);
+        employee.displayInfo();
+        employee.work();
+
+        User user = new User("Bob Johnson", 35, "EMP456", 60000, "bob123", "bob@example.com");
+        user.displayInfo();
+        user.browseInternet();
+    }
+}
