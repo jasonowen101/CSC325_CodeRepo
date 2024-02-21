@@ -1,0 +1,14 @@
+The `@Override` annotation in Java is used to indicate that a method in a subclass is intended to override a method in its superclass or interface. This annotation helps the compiler catch errors if the annotated method doesn't actually override a method in the superclass or interface.
+
+In the provided code:
+
+- In the `Employee` class:
+  - `@Override` is used for the `doWork()` method, indicating that it is overriding the `doWork()` method declared in the `Workable` interface.
+  - `@Override` is used for the `takeBreak()` method, indicating that it is overriding the `takeBreak()` method declared in the `Workable` interface.
+  - `@Override` is used for the `generateReport()` method, indicating that it is overriding the `generateReport()` method declared in the `Reportable` interface.
+  - `@Override` is used for the `analyzeData()` method, indicating that it is overriding the `analyzeData()` method declared in the `Reportable` interface.
+
+- In the `Manager` class:
+  - Similar to the `Employee` class, `@Override` is used for each method to indicate that it is overriding methods declared in the interfaces (`Workable`, `Managable`, and `Reportable`) that `Manager` is implementing.
+
+Using `@Override` is not strictly required for methods that are implementing an interface, but it's good practice because it helps catch errors during compilation if the annotated method doesn't correctly match a method in the interface. If there's a mistake in the method signature (e.g., misspelling or incorrect parameter types), the compiler will generate an error, making it easier to identify and fix issues.
