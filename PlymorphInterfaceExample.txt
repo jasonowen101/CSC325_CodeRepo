@@ -75,7 +75,7 @@ class RoboDog implements Pet {
 public class PetExample {
     public static void main(String[] args) {
         Dog myDog = new Dog();
-        RoboDog myRoboDog = new RoboDog();
+        RoboDog myRoboDog = new RoboDog();`
 
         // Dog actions
         myDog.run();
